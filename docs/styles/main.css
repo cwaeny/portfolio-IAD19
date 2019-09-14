@@ -76,3 +76,38 @@ h2 {
   background-color: #f3f3f2;
   padding-top: 150px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.active {
+  font-weight: 600;
+  color: #a48662;
+}
+
+nav {
+  margin-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

@@ -29,12 +29,12 @@ body {
   background-image: url('../img/home-img.jpg');
   background-size: cover;
   background-repeat:no-repeat;
-  height: 600px;
+  height: 60vh;
 }
 
 @media (min-width: 992px){
   .home-image {
-    height: 900px;
+    height: 90vh;
   }
 }
 

@@ -2,16 +2,11 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   font-size: 16px;
   overflow-x: hidden;
-}
-
-button:focus{
-  outline: none;
 }
 
 ::selection {
@@ -65,15 +60,19 @@ button:focus{
 .navbar-toggler {
   padding: 0;
   border: none;
-  background-image: url('../img/nav-close.svg');
-  background-size: 100% 100%;
-
 }
 
-/*.navbar-toggler-icon {
+.navbar-toggler{
+  background-image: url('../img/nav-close.svg');
+  background-size: 100% 100%;
+}
+
+
+.navbar-toggler.collapsed{
   background-image: url('../img/m-nav.svg');
   background-size: 100% 100%;
-}*/
+}
+
 
 .navbar-light {
   background-image: none;
@@ -200,24 +199,13 @@ a.nav-link{
   min-height: 1px;
  }
 
-#first_btn {
-  margin-bottom: 40px;
-}
-
-@media (min-width: 992px) {
-  #first_btn {
-    margin-bottom: 100px;
-  }
-}
-
-
   div {
     display: block;
   }
 
-  .site-main {
+  #primary-content {
     margin-top: 180px;
-    /*margin-bottom: 40px;*/
+    margin-bottom: 40px;
     animation: fadein 1.5s;
     -moz-animation: fadein 1.5s; /* Firefox */
     -webkit-animation: fadein 1.5s; /* Safari and Chrome */
@@ -225,9 +213,9 @@ a.nav-link{
 }
 
   @media (min-width: 992px){
-    .site-main {
+    #primary-content {
       margin-top: 220px;
-      /*margin-bottom: 100px;*/
+      margin-bottom: 100px;
       animation: fadein 1.5s;
       -moz-animation: fadein 1.5s; /* Firefox */
       -webkit-animation: fadein 1.5s; /* Safari and Chrome */
@@ -553,8 +541,11 @@ button.btn.btn-link.btn-symbol{
 
 button {
   padding: 0;
-}
 
+}
+button:focus{
+  outline: none;
+}
 .btn {
   padding: 0;
 }
@@ -778,3 +769,8 @@ button {
 .articleBlog {
   margin-bottom: 0;
 }
+
+/*.navbar-toggler-icon-close {
+  background-image: url('../img/nav-close.svg');
+  background-size: 100% 100%;
+}*/

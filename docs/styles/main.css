@@ -317,12 +317,22 @@ a.nav-link{
 p {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: #A7A7A0;
   letter-spacing: 0.3px;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
+@media (min-width: 992px){
+  p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #A7A7A0;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+  }
+}
 
 img.home {
   display: 100%;

@@ -843,7 +843,18 @@ button:focus{
   margin-bottom: 0;
 }
 
-/*.navbar-toggler-icon-close {
-  background-image: url('../img/nav-close.svg');
-  background-size: 100% 100%;
-}*/
+.carousel-control-next-icon {
+  background-image: url(../img/car-right.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../img/car-left.svg);
+  width: 40px;
+  height: 40px;
+}
+
+#carouselExampleControls {
+  margin-bottom: 1rem;
+}

@@ -585,16 +585,53 @@ button:focus{
 
 .rectancle {
   background-color: #f9f9f9;
-  padding: 19px 0 19px 28px;
+  padding: 19px 0 19px 24px;
   margin-bottom: 15px;
 }
 
 @media (min-width: 992px){
   .rectancle {
     background-color: #f9f9f9;
-    padding: 19px 0 19px 28px;
-    margin-bottom: 60px;
+    padding: 19px 0 19px 24px;
+    /*margin-bottom: 60px;*/
   }
+}
+
+
+.dataInner {
+  margin-left: 60px;
+}
+
+
+.imageWrap {
+  float: left;
+  min-width: 44px;
+  text-align: center;
+  position: relative;
+  padding-top: 5px;
+}
+
+.images-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.articleContent {
+  margin-top: 40px;
+}
+
+.articleText {
+  margin-top: 40px;
+}
+
+@media (min-width: 992px){
+  .articleContent {
+    margin-top: 100px;
+}
+.articleText {
+  margin-top: 0;
+}
+
 }
 
 .value {

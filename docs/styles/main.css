@@ -15,6 +15,11 @@ body {
   background: #E51659;
 }
 
+::-webkit-selection, ::-moz-selection {
+  color: white;
+  background: #E51659;
+}
+
 .siteWrapper{
   padding: 0;
 }

@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -203,6 +204,25 @@ a.nav-link{
     display: block;
   }
 
+#content-blog {
+  margin-bottom: 45px;
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s; /* Firefox */
+  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+  -o-animation: fadein 1.5s; /* Opera */
+}
+
+@media (min-width: 992px){
+  #content-blog {
+    margin-bottom: 100px;
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+}
+}
+
+
   #primary-content {
     margin-top: 180px;
     margin-bottom: 40px;
@@ -287,6 +307,7 @@ a.nav-link{
     color: #E51659;
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-bottom: .325rem;
   }
 
 p {
@@ -490,6 +511,11 @@ h5 .btn-symbol::after {
   float: right;
   width: 27px;
   height: 27px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 button.btn.btn-link.btn-symbol.collapsed::after {
@@ -497,10 +523,16 @@ button.btn.btn-link.btn-symbol.collapsed::after {
   float: right;
   width: 27px;
   height: 27px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 button.btn.btn-link.btn-symbol{
   text-decoration: none;
+  position: relative;
 }
 
 .collapsed:focus {

@@ -884,3 +884,16 @@ button:focus{
   letter-spacing: 0.3px;
   line-height: 1.5;
 }
+
+video:focus{
+  outline: none;
+}
+
+iframe #innerdocbody {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.edupadFrame {
+  margin-top: 3rem;
+}

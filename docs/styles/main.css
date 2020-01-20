@@ -4,6 +4,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-padding-top: 127px;
 }
 
 body {
@@ -28,6 +29,16 @@ body {
 @media (min-width: 992px){
   .siteWrapper{
     padding: 30px;
+  }
+}
+
+.navbar-nav{
+min-height: 100vh;
+}
+
+@media (min-width: 992px){
+  .navbar-nav{
+  min-height:inherit;
   }
 }
 
@@ -124,7 +135,7 @@ a.nav-link{
 @media (min-width: 992px){
   a.nav-link{
     color: #A7A7A0;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   a.nav-link:hover{
@@ -320,7 +331,7 @@ a.nav-link{
     margin-bottom: .325rem;
   }
 
-p {
+p, li {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 1.15rem;
@@ -330,7 +341,7 @@ p {
 }
 
 @media (min-width: 992px){
-  p {
+  p, li {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
@@ -524,6 +535,7 @@ h5 {
   font-weight: 400;
   color: #000000;
   margin: 0;
+  font-size: 1.15rem;
 
 }
 h5 .btn-symbol::after {
@@ -875,15 +887,6 @@ button:focus{
   margin-bottom: 1.1rem;
 }
 
-.commText {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 1.25rem;
-  color: #868686;
-  letter-spacing: 0.3px;
-  line-height: 1.5;
-}
 
 video:focus{
   outline: none;
@@ -896,4 +899,18 @@ iframe #innerdocbody {
 
 .edupadFrame {
   margin-top: 3rem;
+}
+
+.journalImg {
+  margin-bottom: 2.5rem;
+}
+
+.textLink {
+  color: #E51659;
+}
+
+.textLink:hover {
+  color: #E51659;
+  text-decoration: underline;
+ text-decoration-color: #F1D5DE;
 }

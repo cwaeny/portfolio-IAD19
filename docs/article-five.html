@@ -144,8 +144,7 @@
                   <?xml version="1.0" encoding="UTF-8"?>
                   <svg width="30px" height="30px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-                    <title>Combined-Shape</title>
-                    <desc>Created with Sketch.</desc>
+
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="home" transform="translate(-1159.000000, -3531.000000)">
                         <rect id="Rectangle" fill="#000000" x="0" y="3478" width="1440" height="163"></rect>
@@ -183,8 +182,7 @@
                   <?xml version="1.0" encoding="UTF-8"?>
                   <svg width="30px" height="30px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-                    <title>Combined-Shape</title>
-                    <desc>Created with Sketch.</desc>
+
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="home" transform="translate(-1199.000000, -3531.000000)">
                         <rect id="Rectangle" fill="#000000" x="0" y="3478" width="1440" height="163"></rect>
@@ -214,7 +212,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script>
+  <!--<script>
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -225,7 +223,24 @@
   }
   prevScrollpos = currentScrollPos;
   }
-  </script>
+</script>-->
+  <script>
+  $(function () {
+var message = "Komm zurück... 😯";
+var original;
 
+$(window).focus(function() {
+if(original) {
+document.title = original;
+}
+}).blur(function() {
+var title = $('title').text();
+if(title != message) {
+original = title;
+}
+document.title = message;
+});
+});
+  </script>
 </body>
 </html>

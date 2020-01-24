@@ -14,7 +14,7 @@ body {
 
 ::selection {
   color: white;
-  background: #E51659;
+  background: black;
 }
 
 ::-webkit-selection, ::-moz-selection {
@@ -913,4 +913,8 @@ iframe #innerdocbody {
   color: #E51659;
   text-decoration: underline;
  text-decoration-color: #F1D5DE;
+}
+
+.quote {
+  font-style: italic;
 }

@@ -331,6 +331,10 @@ a.nav-link{
     margin-bottom: .325rem;
   }
 
+ul {
+  padding-inline-start:1.25rem;
+}
+
 p, li {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
